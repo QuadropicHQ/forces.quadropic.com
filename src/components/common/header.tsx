@@ -21,21 +21,31 @@ export function Header({ className }: SidebarProps) {
   const items = [
     {
       href: 'https://map.sistilli.dev/public/coding/SaaS+Boilerplate',
-      title: 'Book a demo',
+      title: 'Our Work',
+      openInNewTab: true
+    },
+    {
+      href: 'https://map.sistilli.dev/public/coding/SaaS+Boilerplate',
+      title: 'Privacy Policy',
+      openInNewTab: true
+    },
+    {
+      href: 'https://map.sistilli.dev/public/coding/SaaS+Boilerplate',
+      title: 'Terms of Service',
+      openInNewTab: true
+    },
+    {
+      href: 'https://map.sistilli.dev/public/coding/SaaS+Boilerplate',
+      title: 'Contact Us',
       openInNewTab: true
     }
-    // { href: '#pricing', title: 'Features' },
-    // {
-    //   href: 'mailto:myemail@.com',
-    //   title: 'Contact Us'
-    // }
   ]
 
   const getLogo = () => (
     <Link href="/" className="pointer flex items-center">
       <img src="/logo.svg" className="mr-3" />
       <Typography className="!text-white !text-base font-medium ">
-        Pandem
+        Forces
       </Typography>
     </Link>
   )
@@ -46,15 +56,9 @@ export function Header({ className }: SidebarProps) {
         href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
         target="_blank"
       >
-        <Typography variant="p">Login</Typography>
-      </Link>
-      <Link
-        href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
-        target="_blank"
-      >
         <Button size="tiny" color="ghost">
           <Typography variant="p" className="text-black">
-            Sign Up
+            Let&aposs Talk
           </Typography>
         </Button>
       </Link>
@@ -102,7 +106,7 @@ export function Header({ className }: SidebarProps) {
           <div className="md:flex-0 min-w-fit flex-1">
             {getLogo()}
           </div>
-          <div className="hidden md:flex flex items-center w-full">
+          <div className="hidden md:flex items-center w-full">
             <div className="flex items-center gap-x-8 flex-1">
               {getHeaderItems()}
             </div>

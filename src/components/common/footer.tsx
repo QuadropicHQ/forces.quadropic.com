@@ -13,10 +13,22 @@ export function Footer() {
           >
             <img src="/logo.svg" className="mr-3" />
             <Typography className="!text-white !text-base font-medium ">
-              Pandem
+              Forces
             </Typography>
           </Link>
         </div>
+
+        <div className="gap-x-11 md:flex flex-1 hidden">
+          <Link
+            href="/"
+            className="pointer flex items-center"
+          >
+            <Typography className="!text-white !text-base font-medium ">
+              © QuadropicHQ
+            </Typography>
+          </Link>
+        </div>
+
         <div className="flex max-w-fit items-center gap-x-4">
           <Link
             href="https://map.sistilli.dev/public/coding/SaaS+Boilerplate"
